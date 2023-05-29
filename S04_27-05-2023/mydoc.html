@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function changeStyle() {
+        document.getElementById("title").style.color = "red";
+      }
+
+      function fn1() {
+        document.getElementById("p1").style.backgroundColor = "red";
+        document.getElementById("p1").style.padding = "30px";
+        document.getElementById("p1").style.color = "white";
+      }
+      function fn2() {
+        document.getElementById("p1").style.backgroundColor = "blue";
+        document.getElementById("p1").style.padding = "50px";
+        document.getElementById("p1").style.color = "white";
+      }
+
+      function fn3() {
+        document.getElementById("title").style.color = "green";
+        document.getElementById("title").innerText =
+          "Document Object Model in Javascript";
+      }
+      function fn4() {
+        document.getElementById("title").style.color = "darkred";
+        document.getElementById("title").innerText =
+          "Document Object Model in Javascript With Kabir";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h2 id="title" onmouseenter="fn3()" onmouseleave="fn4()">
+          Document Object Model
+        </h2>
+      </div>
+
+      <div>
+        <p id="p1" onmouseenter="fn1()" onmouseleave="fn2()">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          voluptates. Magni fugiat dolor, sed eaque ex exercitationem nesciunt
+          delectus voluptatem quidem et rem quis voluptate soluta. Dolor, sint
+          est sunt dolorum officia blanditiis quisquam. Excepturi cupiditate,
+          magni quos laboriosam praesentium reprehenderit repellendus voluptate
+          animi, atque optio nam amet nesciunt tempore itaque qui asperiores
+          numquam aliquam exercitationem non fugiat, earum beatae. Iste illum
+          animi quaerat dicta, saepe nihil similique voluptatum. Sed iusto
+          explicabo quod quae voluptate vero maxime harum. Iure laudantium
+          consectetur natus nisi minus animi pariatur. Consequuntur facilis quos
+          nulla laborum? Itaque quam accusamus quo? Unde ad, optio voluptatibus
+          assumenda nihil repellat animi, aliquid perferendis qui magnam in
+          amet, consectetur nisi enim? Laudantium dolore voluptatum culpa
+          voluptate porro laborum animi eligendi dolor consequatur distinctio!
+          Autem ipsam, deleniti minima magni non id nam, vero dolores tempora
+          tenetur sapiente asperiores accusamus eveniet, maxime commodi esse sed
+          doloremque suscipit ea. Quo recusandae aliquam impedit aut dolor autem
+          eveniet? Fugiat, veniam quam sit repellat sequi a? Provident, enim.
+          Veritatis numquam sequi fuga consequatur beatae perferendis nam
+          pariatur sit unde soluta modi fugit necessitatibus minus deleniti sunt
+          rerum iusto voluptas labore, explicabo reprehenderit, minima placeat
+          officia. Dolorem cumque maiores error voluptas magnam earum corporis
+          esse.
+        </p>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+          adipisci reiciendis praesentium eius? Officia doloribus laborum cum
+          asperiores quod alias explicabo inventore labore facilis molestias.
+          Modi voluptatibus minima aliquam enim natus velit magnam nisi tenetur
+          odit provident pariatur illum cupiditate perspiciatis, doloribus
+          incidunt! Laborum aliquam illum reiciendis quasi aperiam nulla maxime
+          commodi consequatur doloribus. Culpa sit eligendi earum maxime cum
+          voluptas sunt deserunt iure! Asperiores, commodi? Illum ratione, earum
+          tenetur error, sunt facere adipisci laboriosam quis perspiciatis vero
+          facilis neque commodi impedit doloremque qui recusandae magni
+          eligendi. Magnam modi temporibus eveniet excepturi velit reiciendis
+          vero nesciunt, quas et molestiae in!
+        </p>
+      </div>
+      <button onclick=" changeStyle()">Change Style</button>
+    </div>
+  </body>
+</html>
