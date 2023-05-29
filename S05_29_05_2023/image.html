@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function changeImageToCar() {
+        var img = document.getElementById("img");
+        img.src =
+          "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960";
+      }
+      function changeImageToBike() {
+        var img = document.getElementById("img");
+        img.src =
+          "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/News/TVS%20Ronin%20Final.jpg&c=0";
+        ("");
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; margin-top: 100px">
+      <img
+        id="img"
+        src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/News/TVS%20Ronin%20Final.jpg&c=0"
+        width="300"
+        height="300"
+      /><br />
+      <button onclick="changeImageToBike()">Bike</button>
+      <button onclick="changeImageToCar()">Car</button>
+    </div>
+  </body>
+</html>

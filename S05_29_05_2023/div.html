@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function fn800() {
+        var divRef = document.getElementById("d1");
+        divRef.style.width = "800px";
+      }
+      function fn1200() {
+        var divRef = document.getElementById("d1");
+        divRef.style.width = "1200px";
+      }
+      function fn300() {
+        var divRef = document.getElementById("d1");
+        divRef.style.width = "300px";
+      }
+    </script>
+    <style>
+      div {
+        width: 300px;
+        height: 400px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d1"></div>
+    <br />
+    <button onclick="fn300()">300</button>
+    <button onclick="fn800()">800</button>
+    <button onclick="fn1200()">1200</button>
+  </body>
+</html>

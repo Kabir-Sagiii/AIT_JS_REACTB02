@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Manipulation</title>
+    <script>
+      function changeStyleContent() {
+        //document is a pre-defined object which represents entire HTML Document
+        console.log(document);
+
+        //Referenc of h2 Element
+        var h2Ref = document.getElementById("heading");
+        //Reference of P Element
+        var pRef = document.getElementById("para");
+
+        h2Ref.innerText = "DOM Manipulation using Javascript";
+        h2Ref.style.color = "green";
+
+        pRef.style.backgroundColor = "coral";
+        pRef.style.padding = "30px";
+        pRef.style.color = "white";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2 id="heading">DOM Manipulation</h2>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestiae
+        architecto libero id accusantium vel dolor ea, quisquam quae, maxime
+        corrupti inventore. Quod, quisquam quas? Voluptate nobis voluptatibus,
+        repellat consequatur eveniet labore laborum. Eligendi aut suscipit
+        soluta hic illum nisi corrupti quae natus saepe deserunt voluptas
+        facilis eveniet repellat, enim, minus magni laboriosam perferendis
+        nihil. Necessitatibus eos explicabo, dolore laudantium nihil ratione
+        corrupti aspernatur harum veniam cum excepturi maxime minima sint
+        tempora maiores perspiciatis praesentium molestiae corporis velit
+        voluptate fuga soluta consectetur molestias porro? Distinctio nihil
+        suscipit eligendi praesentium asperiores tempora corporis quos aut
+        maiores nostrum voluptates officiis cum architecto pariatur consequatur
+        veniam voluptate maxime sit eos, quod repudiandae nisi blanditiis et.
+        Necessitatibus earum in id aut corporis ad ullam, omnis veniam nobis,
+        libero maxime pariatur assumenda porro. Totam eveniet quas, quisquam ut
+        odio iusto culpa exercitationem nemo maiores nostrum rerum minus beatae
+        sit. Rerum consequatur recusandae laborum sit quam incidunt at,
+        temporibus perspiciatis voluptatem, deleniti assumenda. Incidunt natus
+        nulla, illum accusamus architecto, repellendus veniam distinctio facere
+        quo, ab fugiat molestias vitae sunt numquam. Beatae deserunt, facere
+        ipsum sequi praesentium iste vero. Non, aut ut eum reiciendis, ratione
+        quo quos a ex odit eaque neque, natus ullam ducimus nemo hic.
+      </p>
+      <button onclick="changeStyleContent()">Change Color and Title</button>
+    </div>
+  </body>
+</html>
