@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function changeSize() {
+        var sizeRef = document.getElementById("size");
+        var h2Ref = document.getElementById("content");
+
+        switch (sizeRef.value) {
+          case "10":
+            h2Ref.style.fontSize = "10px";
+            break;
+
+          case "20":
+            h2Ref.style.fontSize = "30px";
+            break;
+
+          case "30":
+            h2Ref.style.fontSize = "50px";
+            break;
+
+          case "40":
+            h2Ref.style.fontSize = "80px";
+            break;
+
+          case "50":
+            h2Ref.style.fontSize = "100px";
+            break;
+        }
+      }
+
+      function changeColor() {
+        var colorRef = document.getElementById("color");
+
+        var h2Ref = document.getElementById("content");
+
+        switch (colorRef.value) {
+          case "Red":
+            h2Ref.style.color = "red";
+            break;
+
+          case "Green":
+            h2Ref.style.color = "green";
+            break;
+
+          case "Blue":
+            h2Ref.style.color = "blue";
+            break;
+
+          case "Orange":
+            h2Ref.style.color = "orange";
+            break;
+
+          case "Black":
+            h2Ref.style.color = "black";
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; margin-top: 100px">
+      <div>
+        <select id="size" onchange="changeSize()">
+          <option>Select Size</option>
+          <option>10</option>
+          <option>20</option>
+          <option>30</option>
+          <option>40</option>
+          <option>50</option></select
+        >&nbsp;&nbsp;&nbsp;&nbsp;
+        <select id="color" onchange="changeColor()">
+          <option>Select Color</option>
+          <option>Red</option>
+          <option>Green</option>
+          <option>Orange</option>
+          <option>Black</option>
+          <option>Blue</option>
+        </select>
+      </div>
+      <h2 id="content">Hello Javascript, You are Awesome</h2>
+    </div>
+  </body>
+</html>
