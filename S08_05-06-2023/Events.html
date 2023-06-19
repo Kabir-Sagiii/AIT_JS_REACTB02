@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function fnClick() {
+        var btnRef = document.querySelector("#btn");
+        btnRef.textContent = "User Clicked this Button";
+        btnRef.disabled = true;
+      }
+
+      function f2() {
+        var btnRef = document.querySelector("#btn");
+        btnRef.style.backgroundColor = "green";
+        btnRef.style.color = "white";
+        btnRef.style.border = "none";
+        btnRef.style.padding = "10px 20px";
+      }
+
+      function f3() {
+        var btnRef = document.querySelector("#btn");
+        btnRef.style.backgroundColor = "darkred";
+        btnRef.style.color = "white";
+        btnRef.style.border = "none";
+        btnRef.style.padding = "5px 10px";
+      }
+
+      function changeBgColor() {
+        setTimeout(() => {
+          document.getElementById("body").style.backgroundColor = "black";
+        }, 3000);
+        setTimeout(() => {
+          document.getElementById("body").style.backgroundColor = "coral";
+        }, 6000);
+      }
+    </script>
+  </head>
+  <body onload="changeBgColor()" id="body">
+    <div>
+      <button
+        id="btn"
+        onclick="fnClick()"
+        onmouseenter="f2()"
+        onmouseleave="f3()"
+      >
+        Click me
+      </button>
+    </div>
+  </body>
+</html>
