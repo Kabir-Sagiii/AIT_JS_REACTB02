@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function fn() {
+        console.log("starting");
+        setTimeout(() => {
+          console.log("hi");
+          for (let i = 0; i < 10000; i++) {
+            console.log("a" + i);
+          }
+        }, 100);
+
+        setTimeout(() => {
+          console.log("hello");
+          for (let i = 0; i < 10000; i++) {
+            console.log("b" + i);
+          }
+        }, 100);
+
+        console.log("ending");
+      }
+      fn();
+    </script>
+  </head>
+  <body></body>
+</html>
