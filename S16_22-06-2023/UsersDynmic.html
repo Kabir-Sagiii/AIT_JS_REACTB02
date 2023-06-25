@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        margin-top: 30px;
+        display: none;
+      }
+      .card {
+        width: 300px;
+        height: 400px;
+        border: 2px solid black;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function getUsersInformation() {
+        fetch("https://randomuser.me/api/?results=50")
+          .then(function (res) {
+            return res.json();
+          })
+          .then(function (data) {
+            //data = 20 users informations
+            var container = document.getElementById("container");
+
+            container.style.display = "grid";
+            container.style.gridTemplateColumns = "1fr 1fr 1fr";
+
+            //Write the Logic to Create 20 Cards
+
+            data.results.forEach(function (user) {
+              //user = {name:{},location:{},gender,picture}
+              let divRef = document.createElement("div"); // <div>  </div>
+              let imgRef = document.createElement("img"); // <img />
+              let h3Ref = document.createElement("h3"); // <h3>  </h3>
+
+              divRef.appendChild(imgRef);
+              divRef.appendChild(h3Ref);
+
+              divRef.className = "card";
+
+              imgRef.src = user.picture.medium;
+              imgRef.height = "200";
+              h3Ref.innerText = user.name.first + user.name.last;
+
+              container.appendChild(divRef);
+            });
+          })
+          .catch(function (error) {
+            alert("Error while fetching the data");
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>Users Information</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+        explicabo quasi ut magni facilis nostrum alias velit culpa totam
+        perferendis enim praesentium labore earum nobis, amet, optio ea! Quod
+        ipsum, error pariatur, aliquid quia ab repellendus mollitia voluptas rem
+        odio illo. Saepe, corporis blanditiis. Tempore autem, eum numquam ea
+        veniam eius unde labore iusto accusantium! Dolorum placeat reprehenderit
+        aliquam numquam, assumenda ducimus dolores eum atque itaque quis non
+        aliquid facilis beatae ipsam similique veritatis sint pariatur ullam,
+        earum reiciendis tenetur maiores doloremque cupiditate! Alias soluta
+        assumenda aperiam odio obcaecati molestias dicta beatae adipisci. Eos,
+        debitis hic voluptates explicabo maiores nobis.
+      </p>
+      <button onclick="getUsersInformation()">Get Users</button>
+
+      <div id="container"></div>
+    </div>
+  </body>
+</html>

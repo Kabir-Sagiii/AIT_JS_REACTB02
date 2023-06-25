@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="body" onload="createUI()"></body>
+  <script>
+    function createUI() {
+      var h2Ref = document.createElement("h2"); //<h2>   </h2> : DOM ELEMENT
+      h2Ref.innerText = "Javascript DOM Element";
+
+      document.getElementById("body").appendChild(h2Ref);
+    }
+  </script>
+</html>
