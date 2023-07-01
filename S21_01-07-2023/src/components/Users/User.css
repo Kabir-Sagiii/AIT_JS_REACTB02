@@ -1,0 +1,16 @@
+.userscontainer {
+  width: 800px;
+  height: 400px;
+  box-shadow: 0 0 10px black;
+  margin: 50px auto;
+  display: flex;
+}
+.userimage {
+  width: 40%;
+}
+.usercontent {
+  width: 60%;
+  padding: 30px;
+  background-color: white;
+  color: black;
+}
