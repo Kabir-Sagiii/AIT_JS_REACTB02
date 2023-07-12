@@ -1,0 +1,24 @@
+.mainContainer {
+  margin-top: 100px;
+}
+.section1 {
+  display: flex;
+}
+.imageContainer {
+  width: 40%;
+  text-align: center;
+  padding: 15px;
+}
+.contentContainer {
+  width: 60%;
+  padding: 10px;
+}
+img {
+  /* border-radius: 50%; */
+}
+.section2 {
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
