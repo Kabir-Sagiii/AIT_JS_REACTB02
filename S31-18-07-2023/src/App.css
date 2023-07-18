@@ -1,0 +1,17 @@
+.App {
+  /* text-align: center; */
+  margin-top: 10px;
+}
+.table-dark {
+  background-color: red;
+  color: black;
+}
+img {
+  filter: brightness(40%);
+}
+#mycarousel {
+  width: 1000px;
+  margin: 30px auto;
+  height: 200px;
+  box-shadow: 0 0 10px black;
+}
