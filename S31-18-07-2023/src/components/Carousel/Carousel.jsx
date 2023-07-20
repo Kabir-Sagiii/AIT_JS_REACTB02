@@ -3,7 +3,7 @@ import React from "react";
 function Carousel(props) {
   return (
     <div>
-      <div className="carousel slide">
+      <div className="carousel slide" id="mycarousel">
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="1000">
             <img
@@ -12,13 +12,12 @@ function Carousel(props) {
               height="300"
             />
             <div className="carousel-caption">
-              <h3>Moutains Images</h3>
+              <h1>Moutains Images</h1>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Recusandae, iusto quia? Consequuntur voluptatem culpa officia
-                cupiditate quasi minus assumenda, excepturi quis. Quae, repellat
-                molestias? Optio laborum perspiciatis omnis sed vero veritatis
-                iure illum adipisci iste, rem, tenetur ab est recusandae.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                numquam vel quo nemo voluptas ex nobis repellat esse ut quam
+                rerum deleniti cumque perspiciatis voluptates, necessitatibus
+                dignissimos illo officia! Qui!
               </p>
             </div>
           </div>
@@ -41,7 +40,7 @@ function Carousel(props) {
             <img
               src="https://th.bing.com/th/id/OIP.y-zdNl42-VDyuaxn6XjtTQHaFQ?pid=ImgDet&rs=1"
               width="100%"
-              height="450"
+              height="300"
             />
             <div className="carousel-caption">
               <h3>Waterfall Image</h3>
