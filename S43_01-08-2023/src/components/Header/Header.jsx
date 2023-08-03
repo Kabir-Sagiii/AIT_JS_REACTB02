@@ -13,7 +13,12 @@ function Header() {
         <Link to="/products">Products</Link>
         <Link to="/profile">Profile</Link>
         <Link to="/github">Github</Link>
-        <Link to="/cart">Cart</Link>
+        <Link to="/cart">
+          <span>
+            <i class="bi bi-bag-heart-fill"></i>
+          </span>
+          Cart <span>(10)</span>
+        </Link>
         {/* <Link to="/reducer">Reducer</Link>
         <Link to="/redux">Redux</Link> */}
       </div>

@@ -36,7 +36,7 @@ function Jewelery(props) {
               return (
                 <li className="mt-3" key={product.id}>
                   <Link
-                    to={`/productdetails/${product.id}`}
+                    to={`/productdetails/${product.id}/${product.category}`}
                     className="text-primary text-decoration-none"
                   >
                     {product.title}

@@ -33,7 +33,10 @@ function App() {
 
         <Route path="/profile" element={<Main />} />
         <Route path="/github" element={<GithubHome />} />
-        <Route path="/productdetails/:id" element={<ProductDetails />} />
+        <Route
+          path="/productdetails/:id/:category"
+          element={<ProductDetails />}
+        />
         <Route path="/reducer" element={<Counter />} />
         <Route path="/redux" element={<ReduxHome />} />
         <Route path="/cart" element={<Cart />} />

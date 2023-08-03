@@ -3,12 +3,18 @@ import { useSelector, useDispatch } from "react-redux";
 import { addToCartActionCreator } from "../Redux/action/actions";
 
 function ProductDetails(props) {
-  const { id } = useParams();
+  const { id, category } = useParams();
   const dispatch = useDispatch();
   const product = useSelector((storedata) => {
-    return storedata.dataReducer.electronicsdata.filter(
-      (product) => product.id == id
-    );
+    if (category === "electronics") {
+      return storedata.dataReducer.electronicsdata.filter(
+        (product) => product.id == id
+      );
+    } else if (category === "jewelery") {
+      return storedata.productsReducer.jewelery.filter(
+        (product) => product.id == id
+      );
+    }
   });
 
   const addtocart = () => {
