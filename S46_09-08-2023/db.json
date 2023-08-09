@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "id": 101,
+      "name": "Raj",
+      "email": "Raj@gmail.com",
+      "gender": "male"
+    },
+    {
+      "id": 102,
+      "name": "Sneha",
+      "email": "sneha@gmail.com",
+      "gender": "female"
+    },
+    {
+      "id": 103,
+      "name": "Riya",
+      "email": "Riya@gmail.com",
+      "gender": "female"
+    },
+    {
+      "id": 104,
+      "name": "Ayush",
+      "email": "ayush@gmail.com",
+      "gender": "male"
+    },
+    {
+      "name": "rahulVerma",
+      "email": "rahulverma@gmail.com",
+      "gender": "male",
+      "id": 105
+    },
+    {
+      "name": "ziya",
+      "email": "ziya@gmail.com",
+      "gender": "female",
+      "id": 106
+    },
+    {
+      "name": "Mayur",
+      "email": "mayur@gmail.com",
+      "gender": "male",
+      "id": 107
+    },
+    {
+      "name": "dsklnc",
+      "email": "cdsljknc",
+      "gender": "male",
+      "id": 108
+    },
+    {
+      "name": "mayuri",
+      "email": "mayuri@gmail.com",
+      "gender": "female",
+      "id": 109
+    },
+    {
+      "name": "dslbcdjsn",
+      "email": "dkjjsbcdjkfbvdjfkfbv@gmail.com",
+      "gender": "female",
+      "id": 110
+    }
+  ],
+  "info": {
+    "dummyInfo": "cdjksbcjdksvckdjsvbdkjvbdfkjvb"
+  }
+}
