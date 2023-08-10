@@ -1,57 +1,294 @@
 import React from "react";
+import "./Home.css";
 
 function Home(props) {
   return (
     <div style={{ padding: "50px" }}>
-      <h2 style={{ color: "black", textAlign: "center" }}>Home Component</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,
-        maxime, distinctio exercitationem voluptatum veritatis odio magnam ad
-        aperiam inventore et repudiandae similique? Earum magnam provident odio,
-        similique fugiat reiciendis nostrum, pariatur nobis voluptatem dicta
-        maiores aspernatur accusantium omnis qui harum atque mollitia corrupti
-        minima dolorem aperiam culpa? Iste esse, dolor porro eos veritatis nihil
-        corrupti quo quae harum temporibus aperiam aut debitis, dolore quia
-        tempore doloremque quaerat autem natus, asperiores laboriosam? Quaerat
-        eveniet eaque quibusdam! Animi aliquid nobis cupiditate omnis dicta
-        placeat libero eos delectus culpa eum, maiores nemo eaque ratione.
-        Facilis quidem aspernatur nostrum, modi amet quas eligendi debitis.
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-        explicabo obcaecati eos tempora aliquid doloribus, ducimus cum delectus
-        fugiat corporis! Excepturi eligendi ratione nihil, ipsam earum
-        perspiciatis ex adipisci obcaecati. Magni, aliquid sequi reprehenderit
-        totam maiores dolorum voluptatum fuga at laboriosam facere, et vitae
-        consequatur rem? Officia dolores natus vel impedit voluptas saepe quo
-        excepturi ducimus dolorum voluptates minima fugiat labore consequatur,
-        neque veniam ex possimus tempora a vero enim. Iste et velit distinctio
-        veniam qui mollitia pariatur quibusdam tempora earum voluptates!
-        Repudiandae voluptatibus voluptates dignissimos amet architecto quasi
-        harum ipsam dolore, consequuntur eligendi iste nulla libero a maxime
-        repellat nisi commodi ea vitae, porro quisquam nam labore sequi debitis
-        eaque? Delectus consequatur numquam doloremque ipsa aliquid. Vel
-        adipisci, quis minus doloribus odit soluta beatae, aliquam iste
-        voluptatibus possimus sit fugiat aliquid. Doloribus quidem perferendis
-        et nihil recusandae ea, ex mollitia odio quia, dolorum facilis sed
-        tempora suscipit magnam omnis, repudiandae sint incidunt molestiae magni
-        numquam alias libero earum? Quos quisquam dolores fugiat corrupti
-        architecto saepe reiciendis velit mollitia quod. Aliquid in consequatur
-        veniam fuga optio aliquam fugiat, exercitationem enim vero cum. Laborum
-        dignissimos eum iure reiciendis dolor est recusandae distinctio, unde
-        perspiciatis neque doloribus sed ut sequi odit laudantium optio,
-        expedita eaque veniam vero repellat eligendi asperiores molestiae.
-        Tempora incidunt nemo quasi et exercitationem, consequatur nesciunt?
-        Optio quam quisquam deserunt, aut nisi maiores excepturi debitis sequi
-        aspernatur sed quas odio voluptatem minima. In ipsam molestias officia
-        sequi beatae veritatis, totam eveniet non ad vero enim, aliquid unde,
-        odit corrupti! Natus autem molestiae cum consequatur dolorum? Animi
-        voluptate dolorum pariatur mollitia neque labore repellendus velit
-        reprehenderit cum, architecto numquam doloremque illum iste sint ex
-        nulla consectetur illo sapiente cumque. Obcaecati earum dolore,
-        mollitia, delectus animi ipsum rem ipsa quasi sed facere, quisquam
-        maiores cum numquam laudantium corporis atque neque saepe.
-      </p>
+      <div className="homecontainer">
+        <div className="g1">
+          <div className="shadow">
+            <h1>Women Fashion</h1>
+            <div style={{ width: "500px" }}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                velit, enim quos placeat atque reprehenderit praesentium quia
+                mollitia odio porro!
+              </p>
+            </div>
+            <button>Shop Now</button>
+          </div>
+        </div>
+        <div className="g2">
+          <div className="shadow">
+            <h3 style={{ marginBottom: "12px" }}>Special Offer</h3>
+            <h2>Women Fashion</h2>
+          </div>
+        </div>
+        <div className="g3">
+          <div className="shadow">
+            <h3 style={{ marginBottom: "12px" }}>Special Offer</h3>
+            <h2>Women Fashion</h2>
+          </div>
+        </div>
+      </div>
+      <div className="section-2">
+        <h1>CATEGORIES</h1>
+        <div id="contentCategory">
+          <div className="contentSubContainer">
+            <div style={{ width: "40%" }}>
+              <img
+                src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+                width="100%"
+                height="100"
+              />
+            </div>
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <h4>Category Name</h4>
+              <p>100 Products</p>
+            </div>
+          </div>
+
+          <div className="contentSubContainer">
+            <div style={{ width: "40%" }}>
+              <img
+                src="https://th.bing.com/th/id/OIP.t1CezFIeerr3ZGKIdcHa5wAAAA?pid=ImgDet&rs=1"
+                width="100%"
+                height="100"
+              />
+            </div>
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <h4>Category Name</h4>
+              <p>100 Products</p>
+            </div>
+          </div>
+          <div className="contentSubContainer">
+            <div style={{ width: "40%" }}>
+              <img
+                src="https://pluspng.com/img-png/girls-shopping-png-hd--1133.png"
+                width="100%"
+                height="100"
+              />
+            </div>
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <h4>Category Name</h4>
+              <p>100 Products</p>
+            </div>
+          </div>
+          <div className="contentSubContainer">
+            <div style={{ width: "40%" }}>
+              <img
+                src="https://purepng.com/public/uploads/large/purepng.com-women-shoppingwomenpeoplepersonsfemaleshopping-11215250868294beon.png"
+                width="100%"
+                height="100"
+              />
+            </div>
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <h4>Category Name</h4>
+              <p>100 Products</p>
+            </div>
+          </div>
+          <div className="contentSubContainer">
+            <div style={{ width: "40%" }}>
+              <img
+                src="https://opconventioncenter.com/wp-content/uploads/2019/10/AdobeStock_153032995.jpeg"
+                width="100%"
+                height="100"
+              />
+            </div>
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <h4>Category Name</h4>
+              <p>100 Products</p>
+            </div>
+          </div>
+          <div className="contentSubContainer">
+            <div style={{ width: "40%" }}>
+              <img
+                src="https://purepng.com/public/uploads/large/purepng.com-women-shoppingwomenpeoplepersonsfemaleshopping-11215250868294beon.png"
+                width="100%"
+                height="100"
+              />
+            </div>
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <h4>Category Name</h4>
+              <p>100 Products</p>
+            </div>
+          </div>
+          <div className="contentSubContainer">
+            <div style={{ width: "40%" }}>
+              <img
+                src="https://purepng.com/public/uploads/large/purepng.com-women-shoppingwomenpeoplepersonsfemaleshopping-11215250867525vehx.png"
+                width="100%"
+                height="100"
+              />
+            </div>
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <h4>Category Name</h4>
+              <p>100 Products</p>
+            </div>
+          </div>
+          <div className="contentSubContainer">
+            <div style={{ width: "40%" }}>
+              <img
+                src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/young-woman-shopping-isolated-on-white-background_HarwcTr4Fg_SB_PM.jpg"
+                width="100%"
+                height="100"
+              />
+            </div>
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <h4>Category Name</h4>
+              <p>100 Products</p>
+            </div>
+          </div>
+          <div className="contentSubContainer">
+            <div style={{ width: "40%" }}>
+              <img
+                src="https://www.angelfish-opinions.com/wp-content/uploads/2021/05/Woman-shopping-in-a-clothes-store-and-submitting-shopper-insights-via-her-phone-as-part-of-retail-market-research-1024x683.png"
+                width="100%"
+                height="100"
+              />
+            </div>
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <h4>Category Name</h4>
+              <p>100 Products</p>
+            </div>
+          </div>
+          <div className="contentSubContainer">
+            <div style={{ width: "40%" }}>
+              <img
+                src="https://purepng.com/public/uploads/large/purepng.com-women-shoppingwomenpeoplepersonsfemaleshopping-1121525086706jwnrr.png"
+                width="100%"
+                height="100"
+              />
+            </div>
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <h4>Category Name</h4>
+              <p>100 Products</p>
+            </div>
+          </div>
+          <div className="contentSubContainer">
+            <div style={{ width: "40%" }}>
+              <img
+                src="https://purepng.com/public/uploads/large/purepng.com-women-shoppingwomenpeoplepersonsfemaleshopping-11215250879289tvzj.png"
+                width="100%"
+                height="100"
+              />
+            </div>
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <h4>Category Name</h4>
+              <p>100 Products</p>
+            </div>
+          </div>
+          <div className="contentSubContainer">
+            <div style={{ width: "40%" }}>
+              <img
+                src="https://www.westend61.de/images/0000859375pw/woman-shopping-in-grocery-store-aisle-CAIF15595.jpg"
+                width="100%"
+                height="100"
+              />
+            </div>
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <h4>Category Name</h4>
+              <p>100 Products</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
