@@ -1,4 +1,5 @@
 import "./App.css";
+import { Suspense, lazy } from "react";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
@@ -13,9 +14,13 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import Pagenotfound from "./components/Routing/Pagenotfound";
 import Electronics from "./components/Routing/Electronics";
 import Jewelery from "./components/Routing/Jewelery";
-import ProductDetails from "./components/Routing/ProductDetails";
+// import ProductDetails from "./components/Routing/ProductDetails";
 import ReduxHome from "./components/Redux/component/ReduxHome";
-import Cart from "./components/Routing/Cart";
+// import Cart from "./components/Routing/Cart";
+const ProductDetails = lazy(() =>
+  import("./components/Routing/ProductDetails")
+);
+const Cart = lazy(() => import("./components/Routing/Cart"));
 function App() {
   return (
     <div className="App">
@@ -35,11 +40,28 @@ function App() {
         <Route path="/github" element={<GithubHome />} />
         <Route
           path="/productdetails/:id/:category"
-          element={<ProductDetails />}
+          element={
+            <Suspense
+              fallback={
+                <div>
+                  <h2>Products Details is Loading.....</h2>
+                </div>
+              }
+            >
+              <ProductDetails />
+            </Suspense>
+          }
         />
         <Route path="/reducer" element={<Counter />} />
         <Route path="/redux" element={<ReduxHome />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route
+          path="/cart"
+          element={
+            <Suspense fallback={<div>Loading......</div>}>
+              <Cart />
+            </Suspense>
+          }
+        />
         <Route path="*" element={<Pagenotfound />} />
       </Routes>
     </div>

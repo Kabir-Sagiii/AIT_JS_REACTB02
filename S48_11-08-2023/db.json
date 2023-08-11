@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "name": "rahul",
+      "email": "rahulverma@gmail.com",
+      "gender": "male",
+      "id": 105
+    },
+    {
+      "name": "ziya",
+      "email": "ziya@gmail.com",
+      "gender": "female",
+      "id": 106
+    },
+    {
+      "name": "Rajesh Jaiswal",
+      "email": "Rajesh@gmail.com",
+      "gender": "male",
+      "id": 110
+    },
+    {
+      "name": "Ram verma",
+      "email": "Ram@gmail.com",
+      "gender": "male",
+      "id": 111
+    },
+    {
+      "name": "Rani",
+      "email": "Rani@gmail.com",
+      "gender": "female",
+      "id": 112
+    }
+  ],
+  "info": {
+    "dummyInfo": "cdjksbcjdksvckdjsvbdkjvbdfkjvb"
+  }
+}
