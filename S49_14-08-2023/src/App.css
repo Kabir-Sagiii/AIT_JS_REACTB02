@@ -1,0 +1,16 @@
+.App {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+}
+
+.dialogBox {
+  box-shadow: 0 0 10px black;
+  width: 300px;
+  padding: 30px;
+  margin: 30px auto;
+  position: absolute;
+  left: 40vw;
+  z-index: 2;
+  top: 100px;
+}
