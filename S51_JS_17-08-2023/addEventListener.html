@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h2>addEvenListener()</h2>
+      <button id="ae" onclick="addEventToBtn()">Add Event</button>
+      <button id="btn">Click Me</button>
+    </div>
+    <script>
+      function addEventToBtn() {
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click", function () {
+          alert("btn got triggered");
+        });
+        btn.addEventListener("mouseenter", function () {
+          btn.style.backgroundColor = "red";
+          btn.style.padding = "5px 10px";
+        });
+        btn.addEventListener("mouseleave", function () {
+          btn.style.backgroundColor = "black";
+          btn.style.padding = "10px 20px";
+          btn.style.color = "white";
+        });
+      }
+    </script>
+  </body>
+</html>

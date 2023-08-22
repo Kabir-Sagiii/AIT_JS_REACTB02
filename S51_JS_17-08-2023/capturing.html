@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #mainContainer {
+        border: 4px solid red;
+        padding: 50px;
+      }
+      #container {
+        border: 3px solid black;
+        padding: 50px;
+      }
+      span {
+        border: 2px solid green;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Event Capturing</h2>
+    <!-- <button>Dummy button</button> -->
+    <button onclick="addEvents()">Add Event</button><br /><br />
+    <div id="mainContainer">
+      <div id="container">
+        <span class="span">
+          <button>Click Me</button>
+        </span>
+      </div>
+    </div>
+    <script>
+      function addEvents() {
+        var btnRef = document.getElementsByTagName("button");
+        var spanRef = document.getElementsByClassName("span");
+        var divRef = document.getElementById("container");
+        var mainContainer = document.getElementById("mainContainer");
+        // spanRef[0].style.backgroundColor = "lightgreen";
+
+        // console.log(spanRef);
+        // btnRef[2].style.color = "red";
+        console.log(btnRef[1]);
+
+        btnRef[1].addEventListener(
+          "click",
+          function () {
+            alert(" button got Triggered");
+          },
+          true
+        );
+        spanRef[0].addEventListener(
+          "click",
+          function (e) {
+            // e.stopPropagation();
+            alert("Span got Triggered");
+          },
+          true
+        );
+        divRef.addEventListener(
+          "click",
+          function () {
+            alert("div got Triggered");
+          },
+          true
+        );
+
+        mainContainer.addEventListener(
+          "click",
+          function () {
+            alert("mainContainer Triggered");
+          },
+          true
+        );
+        // console.log(btnRef);
+      }
+      function f1(e) {
+        alert("f1");
+      }
+      function f2(e) {
+        alert("f2");
+      }
+      function f3(e) {
+        alert("f3");
+      }
+    </script>
+  </body>
+</html>

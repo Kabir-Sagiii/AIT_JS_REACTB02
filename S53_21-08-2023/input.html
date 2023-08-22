@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #para :first-child {
+        color: red;
+      }
+      #para :last-child {
+        color: white;
+        background-color: brown;
+        padding: 20px;
+      }
+      #para :nth-child(2),
+      :nth-child(3) {
+        color: black;
+        background-color: red;
+        padding: 20px;
+      }
+      input:read-only {
+        border: 2px solid rgb(15, 12, 11);
+      }
+      input:required {
+        width: 300px;
+      }
+      input:hover {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="para">
+      <h1>Psuedo Class</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste
+        voluptatum quia asperiores, odio vero!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste
+        voluptatum quia asperiores, odio vero!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste
+        voluptatum quia asperiores, odio vero!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste
+        voluptatum quia asperiores, odio vero!
+      </p>
+    </div>
+    <div style="text-align: center; margin-top: 100px">
+      <form>
+        <input type="text" placeholder="Enter Text" required />
+        <input type="password" placeholder="Enter Password" readonly />
+      </form>
+    </div>
+  </body>
+</html>

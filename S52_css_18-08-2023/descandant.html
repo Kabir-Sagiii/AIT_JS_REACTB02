@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function disableInput() {
+        var inputRef = document.getElementsByTagName("input");
+        inputRef[0].disabled = true;
+        inputRef[3].disabled = true;
+        // console.log(inputRef);
+        // inputRef[3].style.backgroundColor = "red";
+      }
+    </script>
+    <style>
+      #d1 > p {
+        color: red;
+      }
+      #d1 {
+        border: 2px solid black;
+      }
+      input[type="password"] {
+        background-color: red;
+      }
+      input[name="gender"] {
+        width: 130px;
+      }
+      input:disabled {
+        border: 2px solid red;
+        width: 300px;
+      }
+      #d1:hover {
+        background-color: lightcoral;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Input elements</h2>
+    <div>
+      <input type="text" />
+      <input type="password" />
+      <input type="radio" name="gender" />Male <br /><br />
+      <input type="text" placeholder="Disable It" />
+      <button onclick="disableInput()">Disable</button>
+    </div>
+    <br /><br />
+
+    <div id="d1">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, neque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cum
+        cupiditate voluptas. At voluptate atque, iure soluta impedit temporibus
+        sunt!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+        veritatis possimus est, laborum deleniti, magni ducimus quod corporis,
+        veniam labore cum dolore distinctio commodi cupiditate dicta et quos
+        numquam culpa?
+      </p>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          recusandae voluptatibus labore eius ad veritatis natus, omnis,
+          perferendis temporibus atque optio error ea corporis aliquid, ullam
+          eum architecto molestiae nemo hic possimus dignissimos. Autem ullam
+          nostrum recusandae doloremque! Nihil nisi voluptate vel quae tenetur
+          assumenda necessitatibus veniam magnam officia, ex amet, corrupti,
+          dolorum et consequatur sequi sit perspiciatis a reiciendis eaque modi
+          unde ullam nesciunt? Quae repudiandae quidem consectetur!
+          Exercitationem magnam maxime tenetur est nemo culpa vel. Nobis illo,
+          quas sunt reiciendis nulla veritatis fugiat excepturi cum veniam
+          temporibus blanditiis culpa, provident dolor reprehenderit eaque unde,
+          aut dolore consectetur! Iure!
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h2>Para 2</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum laborum
+        unde repellendus quidem deleniti perferendis possimus iure eius et
+        dolorem, maxime dolore nam similique officia architecto debitis
+        temporibus omnis explicabo.
+      </p>
+    </div>
+
+    <div>
+      <ul>
+        <li>Hello</li>
+
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+      </ul>
+    </div>
+
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vitae quos
+      optio dignissimos aspernatur, libero, consectetur labore quasi minima,
+      sapiente placeat quas magnam pariatur voluptas. Obcaecati tenetur deleniti
+      quas quidem aliquam amet soluta quam, adipisci doloribus dolores alias non
+      voluptas sint necessitatibus officiis labore animi expedita unde. Corporis
+      sint aspernatur eos impedit, sunt expedita similique molestias illum,
+      veritatis non exercitationem perspiciatis quibusdam? Hic cumque pariatur
+      consequatur repellendus vero provident aspernatur magni, soluta autem
+      perferendis aperiam libero, facere voluptas accusamus quasi est! Soluta,
+      inventore cumque voluptatem esse eaque repellat voluptates id voluptate
+      tempore tenetur aperiam ut impedit, iure error, hic quia!
+    </div>
+  </body>
+</html>
