@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid red;
+      }
+      #t1 {
+        margin-bottom: 30px;
+        width: 300px;
+        border-collapse: separate;
+        caption-side: top;
+        border-spacing: 15px;
+        empty-cells: show;
+      }
+      #t2 {
+        width: 300px;
+        border-collapse: collapse;
+        caption-side: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Table element</h2>
+      <table id="t1">
+        <caption>
+          First Table
+        </caption>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>CITY</th>
+            <th>State</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>101</td>
+            <td>Dummy Name</td>
+            <td>Dummy City</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="t2">
+        <caption>
+          Table - 2
+        </caption>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>CITY</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>101</td>
+            <td>Dummy Name</td>
+            <td>Dummy City</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

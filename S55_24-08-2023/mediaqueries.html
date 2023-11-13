@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      @media print {
+        ol {
+          display: none;
+        }
+        div {
+          color: red;
+          font: 32px;
+        }
+      }
+      @media screen {
+        li {
+          background-color: orange;
+          color: white;
+          width: 150px;
+          margin-top: 20px;
+          padding: 5px;
+          font-size: 20px;
+        }
+        div {
+          padding: 30px;
+          background-color: black;
+          color: white;
+          font-size: 42px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>CSS Resposive Website</div>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>REACT</li>
+    </ol>
+  </body>
+</html>
